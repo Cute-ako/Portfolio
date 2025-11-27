@@ -1,0 +1,378 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio – Jinny Pasquin</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #006884;
+  color: #000;
+}
+
+section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.page-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.2em;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  color: #006884;
+  text-shadow: 0 0 10px #000;
+}
+
+.home-hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("IMG_20250822_142326.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-profile {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 8px solid #ffffffcc;
+  object-fit: cover;
+  box-shadow: 0 4px 15px #00000050;
+}
+
+.hero-name {
+  font-size: 4rem;
+  font-family: Georgia, serif;
+  color: white;
+  margin-top: 20px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-style: italic;
+  color: #eaeaea;
+  margin-top: -10px;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-hero {
+  padding: 12px 30px;
+  background-color:  #86c4ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px #00000040;
+  transition: 0.3s;
+}
+
+.btn-hero:hover { background-color:  #86c4ff; }
+
+@media (max-width: 768px) {
+  .hero-name { font-size: 2.6rem; }
+  .hero-title { font-size: 1.4rem; }
+  .hero-profile { width: 200px; height: 200px; }
+  .hero-buttons { flex-direction: column; }
+}
+
+#about {
+  background-color: #97bcc7
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px #00000020;
+}
+
+.image-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content-section {
+  flex: 2;
+  padding: 20px;
+}
+
+.read-more-btn {
+  background-color: #86c4ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#gallery {
+  background-color: #faebd7;
+  padding: 60px 30px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.photo-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #006884;
+}
+
+.photo-item img {
+  width: 100%;
+  display: block;
+}
+
+.photo-item .date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #006884;
+  color: #ffffffff;
+  padding: 5px 8px;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+
+#contact {
+  background-color: #97bcc7;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon img {
+  width: 50px;
+}
+
+@media (max-width: 480px) {
+  .social-icons { flex-direction: column; }
+  .social-icon img { width: 35px; }
+}
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #86c4ff;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#scrollTopBtn:hover { background-color: #555; }
+
+</style>
+</head>
+
+<body>
+
+<section class="home-hero" id="home">
+  <div class="overlay"></div>
+  <div class="page-number">01</div>
+  
+  <div class="hero-content">
+    <img src="1754229409147.jpg" class="hero-profile">
+
+    <h1 class="hero-name">Jinny Pasquin</h1>
+    <h3 class="hero-title">Photographer</h3>
+
+    <div class="hero-buttons">
+      <a href="#about" class="btn-hero">About me</a>
+      <a href="#contact" class="btn-hero">Contact me</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="page-number">02</div>
+
+  <div class="profile-container">
+
+    <div class="image-section">
+      <img src="1754229409147.jpg">
+    </div>
+
+    <div class="content-section">
+      <h1>ABOUT ME</h1>
+      <p>
+        I am Jinny Pasquin, a Multimedia Arts student with a passion for capturing images through a lens. 
+        I constantly explore new techniques, from mastering manual settings to understanding composition and lighting.
+        <span id="dots">...</span>
+        <span id="more" style="display:none;">
+          I am driven by the desire to tell stories and evoke emotions through my images.
+          I seek opportunities to collaborate with other artists, learn from experienced professionals,
+          and build a portfolio that reflects my unique perspective.
+        </span>
+      </p>
+
+      <button class="read-more-btn" onclick="toggleReadMore()" id="readMoreBtn">Read more</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="page-number">03</div>
+
+  <h1 style="text-align:center;">Photography Gallery</h1>
+
+  <div class="photo-grid">
+    <div class="photo-item">
+      <img src="IMG_20251123_215933.jpg">
+      <span class="date">08.22.2025</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_20250827_173254.jpg">
+      <span class="date">08.27.2025</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="20250522_090447.jpg">
+      <span class="date">05.24.2025</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_20250825_232558.jpg">
+      <span class="date">08.25.2025</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_20210315_144729.jpg">
+      <span class="date">07.14.2021</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_20250829_051511.jpg">
+      <span class="date">08.29.2025</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_20250822_143414.jpg">
+      <span class="date">08.22.2025</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_20250825_23255.jpg">
+      <span class="date">10.02.2025</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_20250828_112159.jpg">
+      <span class="date">08.28.2025</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_20250825_232305.jpg">
+      <span class="date">08.25.2025</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_20251023_172517.jpg">
+      <span class="date">10.23.2025</span>
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_20251023_213819.jpg">
+      <span class="date">10.23.2025</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="page-number">04</div>
+
+  <h1>CONTACTS</h1>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/jinns0_0" class="social-icon">
+      <img src="instagram-icon-png-instagram-icon-1600.png">
+    </a>
+    <a href="https://www.facebook.com/innbente" class="social-icon">
+      <img src="simple-facebook-icon-26.png">
+    </a>
+  </div>
+</section>
+
+<button id="scrollTopBtn" onclick="scrollToTop()">Top</button>
+
+<script>
+function toggleReadMore() {
+  let dots = document.getElementById("dots");
+  let more = document.getElementById("more");
+  let btn = document.getElementById("readMoreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    more.style.display = "none";
+    btn.innerHTML = "Read more";
+  } else {
+    dots.style.display = "none";
+    more.style.display = "inline";
+    btn.innerHTML = "Read less";
+  }
+}
+
+let scrollBtn = document.getElementById("scrollTopBtn");
+window.onscroll = () => {
+  if (document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+};
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
